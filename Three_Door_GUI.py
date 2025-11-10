@@ -3,7 +3,7 @@ from IPython.display import display
 
 import random
 
-class Three_Door():
+class Three_Doors():
     def __init__(self, init_num=3, max_num=10):
 
         # icons for information
