@@ -44,8 +44,9 @@ class Three_Doors():
 
         # numeric variables
         self.init_num = init_num
-        min_num = init_num
-        self.min_num = init_num
+        # should fix minimun door number as original doors problem
+        min_num = 3
+        self.min_num = min_num
         self.max_num = max_num
 
         self.door_num_int = widgets.BoundedIntText(
