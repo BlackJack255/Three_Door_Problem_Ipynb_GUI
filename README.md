@@ -3,8 +3,13 @@ Run three door problem interactively on Ipynb/jupyter notebook GUI
 
 Here we choose ipywidgets package
 
-## User guide
+# User guide
+
+## Introduction
 ### Interactive GUI playing Three door problem on Colab
+
+
+## Clone repository
 
 * Open Colab
 
@@ -23,9 +28,18 @@ $\quad$ There should be our files
 <br>
 <br>
 
+## Installation
+Required packages should be already installed in Colab
+
+If not installed, run following command
+
+```bash
+!pip install ipywidgets
+```
 
 
-* Run and enjoy the GUI
+
+## Run and enjoy the GUI
 ```python
 from Three_Doors_GUI import Three_Doors
 
