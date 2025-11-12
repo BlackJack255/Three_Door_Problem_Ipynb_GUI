@@ -29,7 +29,7 @@ $\quad$ There should be our files
 <br>
 
 ## Installation
-Required packages should be already installed in Colab
+Required packages should already be installed in Colab
 
 If not installed, run following command
 
