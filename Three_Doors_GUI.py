@@ -129,7 +129,6 @@ class Three_Doors():
         # local variable
         goat_arr = [0] * (door_num-1)
         if_chose_car = False
-        #print("in manage_goat")
 
         hide_idx = -1
 
@@ -148,7 +147,6 @@ class Three_Doors():
                 else:
                     # prepare hide door if we didn't choose car door
                     hide_idx = i
-        #print("goat open arr: ", goat_arr)
         open_num = store_idx
 
         # extra deal if we chose car door
@@ -156,7 +154,6 @@ class Three_Doors():
         if if_chose_car == True:
             goat_hide = random.randint(0, store_idx-1)
             hide_idx = goat_arr[goat_hide]
-            #print("goat be hide: ", hide_idx)
 
             # isolated hide door from remain goat_arr
             #   swap hide door with last stored door
@@ -164,7 +161,6 @@ class Three_Doors():
             goat_arr[goat_hide] = goat_arr[store_idx-1]
             goat_arr[store_idx-1] = temp
 
-            #print("after random choose, goat open arr: ", goat_arr)
             open_num -= 1
 
         # open stored doors, change box description to "GOAT"
@@ -187,9 +183,6 @@ class Three_Doors():
         self.final_box.children[1].layout.visibility = None
 
         self.final_choice.value = self.final_str + " " +str(hide_idx+1) + "?"
-
-        #print("keep same door: ", final_box.children[0].value)
-        #print("switch to door: ", final_box.children[1].value)
 
         # end of manage_goat
 
